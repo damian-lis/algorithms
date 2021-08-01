@@ -147,3 +147,20 @@ for (let i = 0; j < data.length; i++) {
 
 // RECAP
 // In most cases look up for the time complexity than space complexity
+
+// ANOTHER CASES:
+
+// O(n) - In this case the time complexity growth linear
+function sumUp(n){
+  let result = 0
+  for(let i = 0; i <n.length ; i++){
+    result = result + i
+  }
+
+  return result
+}
+
+// O(1) - In this case there is constant time of the fn performance regardless of the input data
+function sumUp2(n){
+  return (n/2) * (1 + n)
+}
