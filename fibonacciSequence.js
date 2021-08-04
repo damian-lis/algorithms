@@ -25,3 +25,22 @@ const fib = (n) => {
 };
 
 console.log(fib(5)); // O(n)
+
+// Recursion version:
+
+const fib2 = (n) => {
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+
+  return fib2(n - 1) + fib2(n - 2);
+};
+
+console.log(fib2(10));
+
+// We have problem with nested functions as a tree
+// In the case of loop-based solution whe have O(n)
+// But when we look at number of calling fn we deal with O(2^n)
+// Its not a good solution, going far slower than the previous ones
+// Its seems to be better option in the case of low numbers but when we put for example 35 number we will have a huge number! (increase faster than n^2 or even n^3)
+// Generally its no strict 2^n but we have the trend which is the closest this solution
