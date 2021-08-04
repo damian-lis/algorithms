@@ -44,3 +44,28 @@ console.log(fib2(10));
 // Its not a good solution, going far slower than the previous ones
 // Its seems to be better option in the case of low numbers but when we put for example 35 number we will have a huge number! (increase faster than n^2 or even n^3)
 // Generally its no strict 2^n but we have the trend which is the closest this solution
+
+// Dynamic programming version:
+
+const fib3 = (n, mem) => {
+  let res;
+  if (mem[n]) {
+    return mem[n];
+  }
+
+  if (n === 0 || n === 1) {
+    res = 1;
+  } else {
+    res = fib3(n - 1, mem) + fib3(n - 2, mem);
+  }
+
+  mem[n] = res;
+  return res;
+};
+
+// In this case we introduced additional argument to the fn in the form of object which will store data in each recursion step
+// Its give us to possibility to huge reduce time complexity
+// With this approach we skipped unnecessary branches
+// Now the time complexity is O(n) - increase linear
+
+// HINT => dynamic programming has the same time complexity as build it up from the bottom approach (when we were using for loop and array)
