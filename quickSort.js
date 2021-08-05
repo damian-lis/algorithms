@@ -47,3 +47,5 @@ console.log(quickSort(arr));
 // In our case after conversion we have  O(n * log n) algorithm runtime
 
 // ===> BETTER THAN BUBBLE SORT <===
+
+// Space complexity: O(n) / O(log n) is possible => nested functions calls with the new values being created

@@ -47,3 +47,5 @@ console.log(mergeSort(arr));
 // Algorithm time complexity: O(n^logb(a) * log n) => O(n * log n)
 
 // ===> HAVE BETTER PERFORMANCE RELATIVE TO QUICK SORT AND BUBBLE SORT ALGOS <===
+
+// Space complexity: O(n)

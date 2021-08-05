@@ -31,3 +31,6 @@ console.log(
 // Best case: when the first element of array is that what we search for => O(1)
 // Average case: O(n)
 // Worst case: O(n)
+
+// Space complexity of above algorithm: O(1) 
+// It doesn't occupied more space by increase n

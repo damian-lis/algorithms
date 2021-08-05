@@ -19,3 +19,5 @@ console.log(bubbleSort(arr));
 // Best case: O(1) - nothing to do :)
 // Average case: O (n^2)
 // Worst case: O (n^2) => we have two nested loops
+
+// Space complexity of above algoithm: O(1)

@@ -31,6 +31,8 @@ console.log(binarySearch(arr, 6));
 
 // On every iteration we have split our passed data. so we have logaritmic time complexity
 
+// Space complexity of above algorithm: O(1)
+// It doesn't occupied more space by increase n
 
 
 // Recursive Binary Search:
@@ -67,3 +69,6 @@ const recursiveBinarySearch = (arr, element, offset) => {
 // In this case we have a = 1 b = 2
 // In the result O(n^log2 1) => O(n^0) => O(1) - only for the first step of recursion
 // Overall algorithm time complexity is O(n^2logb a * log n) => O(1 * log n ) => O(log n)
+
+// Space complexity of above algorithm: O(n) 
+// Each recursion fn is waiting for the result of nested recursion fn (every fn must store ourself variables)
