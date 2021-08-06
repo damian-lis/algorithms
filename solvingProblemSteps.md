@@ -16,3 +16,15 @@ Greedy:
 Dynamic:
 -evaluate all possible solutions and find overall best solution via comparison 
 - "divide and conquer" approach: divide the problem into smaller, easy-to-solve subproblems
+
+Improved "problem-solving" plan:
+1. Verify inputs/problem
+
+------ Here mayby go with a simple, greedy approach first ------
+2. Think about problem + verbal solution
+3. Write down a first version
+----------------------------------------------------------------
+
+4. Verify result (try different inputs)
+5. Derive time complexity
+6. Explore alternative approaches (back to the 2 step)
